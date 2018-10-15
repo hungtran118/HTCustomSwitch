@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B42C11ACD4C85E68BC6A79D /* Pods_HTCustomSwitchExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9775904B330CC76F4F9C693 /* Pods_HTCustomSwitchExample.framework */; };
+		8A3B3687217473C60088FCA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3B3686217473C60088FCA5 /* AppDelegate.swift */; };
+		8A3B3689217473C60088FCA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3B3688217473C60088FCA5 /* ViewController.swift */; };
+		8A3B368C217473C60088FCA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3B368A217473C60088FCA5 /* Main.storyboard */; };
+		8A3B368E217473C80088FCA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A3B368D217473C80088FCA5 /* Assets.xcassets */; };
+		8A3B3691217473C80088FCA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A3B368F217473C80088FCA5 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26354215B6F3DD410193AFEF /* Pods-HTCustomSwitchExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTCustomSwitchExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HTCustomSwitchExample/Pods-HTCustomSwitchExample.debug.xcconfig"; sourceTree = "<group>"; };
+		4AC4D7A70CA18A44F022DA76 /* Pods-HTCustomSwitchExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTCustomSwitchExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-HTCustomSwitchExample/Pods-HTCustomSwitchExample.release.xcconfig"; sourceTree = "<group>"; };
+		8A3B3683217473C60088FCA5 /* HTCustomSwitchExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTCustomSwitchExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A3B3686217473C60088FCA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A3B3688217473C60088FCA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A3B368B217473C60088FCA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A3B368D217473C80088FCA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A3B3690217473C80088FCA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A3B3692217473C80088FCA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9775904B330CC76F4F9C693 /* Pods_HTCustomSwitchExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTCustomSwitchExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A3B3680217473C60088FCA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B42C11ACD4C85E68BC6A79D /* Pods_HTCustomSwitchExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43570C6D1EF5064D010FC2DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26354215B6F3DD410193AFEF /* Pods-HTCustomSwitchExample.debug.xcconfig */,
+				4AC4D7A70CA18A44F022DA76 /* Pods-HTCustomSwitchExample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A3B367A217473C60088FCA5 = {
+			isa = PBXGroup;
+			children = (
+				8A3B3685217473C60088FCA5 /* HTCustomSwitchExample */,
+				8A3B3684217473C60088FCA5 /* Products */,
+				43570C6D1EF5064D010FC2DA /* Pods */,
+				AC3EE731F14A50B15EA700B8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8A3B3684217473C60088FCA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A3B3683217473C60088FCA5 /* HTCustomSwitchExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A3B3685217473C60088FCA5 /* HTCustomSwitchExample */ = {
+			isa = PBXGroup;
+			children = (
+				8A3B3686217473C60088FCA5 /* AppDelegate.swift */,
+				8A3B3688217473C60088FCA5 /* ViewController.swift */,
+				8A3B368A217473C60088FCA5 /* Main.storyboard */,
+				8A3B368D217473C80088FCA5 /* Assets.xcassets */,
+				8A3B368F217473C80088FCA5 /* LaunchScreen.storyboard */,
+				8A3B3692217473C80088FCA5 /* Info.plist */,
+			);
+			path = HTCustomSwitchExample;
+			sourceTree = "<group>";
+		};
+		AC3EE731F14A50B15EA700B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9775904B330CC76F4F9C693 /* Pods_HTCustomSwitchExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A3B3682217473C60088FCA5 /* HTCustomSwitchExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A3B3695217473C80088FCA5 /* Build configuration list for PBXNativeTarget "HTCustomSwitchExample" */;
+			buildPhases = (
+				138E76ECC652DB246D357BA1 /* [CP] Check Pods Manifest.lock */,
+				8A3B367F217473C60088FCA5 /* Sources */,
+				8A3B3680217473C60088FCA5 /* Frameworks */,
+				8A3B3681217473C60088FCA5 /* Resources */,
+				2DB927B7D9867864B26CF0C4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTCustomSwitchExample;
+			productName = HTCustomSwitchExample;
+			productReference = 8A3B3683217473C60088FCA5 /* HTCustomSwitchExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A3B367B217473C60088FCA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = HT;
+				TargetAttributes = {
+					8A3B3682217473C60088FCA5 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 8A3B367E217473C60088FCA5 /* Build configuration list for PBXProject "HTCustomSwitchExample" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A3B367A217473C60088FCA5;
+			productRefGroup = 8A3B3684217473C60088FCA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A3B3682217473C60088FCA5 /* HTCustomSwitchExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A3B3681217473C60088FCA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3B3691217473C80088FCA5 /* LaunchScreen.storyboard in Resources */,
+				8A3B368E217473C80088FCA5 /* Assets.xcassets in Resources */,
+				8A3B368C217473C60088FCA5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		138E76ECC652DB246D357BA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HTCustomSwitchExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DB927B7D9867864B26CF0C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HTCustomSwitchExample/Pods-HTCustomSwitchExample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/HTCustomSwitch/HTCustomSwitch.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTCustomSwitch.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HTCustomSwitchExample/Pods-HTCustomSwitchExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A3B367F217473C60088FCA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A3B3689217473C60088FCA5 /* ViewController.swift in Sources */,
+				8A3B3687217473C60088FCA5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8A3B368A217473C60088FCA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A3B368B217473C60088FCA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A3B368F217473C80088FCA5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A3B3690217473C80088FCA5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A3B3693217473C80088FCA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8A3B3694217473C80088FCA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A3B3696217473C80088FCA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26354215B6F3DD410193AFEF /* Pods-HTCustomSwitchExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7QBA97J5G9;
+				INFOPLIST_FILE = HTCustomSwitchExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HT.HTCustomSwitchExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A3B3697217473C80088FCA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AC4D7A70CA18A44F022DA76 /* Pods-HTCustomSwitchExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7QBA97J5G9;
+				INFOPLIST_FILE = HTCustomSwitchExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = HT.HTCustomSwitchExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A3B367E217473C60088FCA5 /* Build configuration list for PBXProject "HTCustomSwitchExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3B3693217473C80088FCA5 /* Debug */,
+				8A3B3694217473C80088FCA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A3B3695217473C80088FCA5 /* Build configuration list for PBXNativeTarget "HTCustomSwitchExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A3B3696217473C80088FCA5 /* Debug */,
+				8A3B3697217473C80088FCA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A3B367B217473C60088FCA5 /* Project object */;
+}

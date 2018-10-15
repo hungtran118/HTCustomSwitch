@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol HTCustomSwitchDelegate {
+public protocol HTCustomSwitchDelegate: class {
     func valueChanged(sender: HTCustomSwitch)
 }
 
@@ -16,7 +16,7 @@ protocol HTCustomSwitchDelegate {
 public class HTCustomSwitch: UIView {
     
     //MARK: - PROPERTIES
-    var delegate: HTCustomSwitchDelegate?
+    weak public var delegate: HTCustomSwitchDelegate?
     
     private var ball = UIView()
     private var container = UIView()

@@ -1,0 +1,16 @@
+PODS:
+  - HTCustomSwitch (1.0.0)
+
+DEPENDENCIES:
+  - HTCustomSwitch (from `../HTCustomSwitch`)
+
+EXTERNAL SOURCES:
+  HTCustomSwitch:
+    :path: "../HTCustomSwitch"
+
+SPEC CHECKSUMS:
+  HTCustomSwitch: 94c84b7401d5c5510b92a9ff59113d134e6e5789
+
+PODFILE CHECKSUM: 47a8057d018ce0712d14d0f8ed910a7249d9d903
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,6 @@
+framework module HTCustomSwitch {
+  umbrella header "HTCustomSwitch-umbrella.h"
+
+  export *
+  module * { export * }
+}
