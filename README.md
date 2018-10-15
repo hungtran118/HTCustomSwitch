@@ -57,6 +57,10 @@ Or, you can create it with storyboard by just changing class of any `UIView` to 
 
 ### Properties
 
+- isOn:
+```swift
+myCustomUISwitch.isOn = 'Bool'
+```
 -  On Ball Size:
 ```swift
 myCustomUISwitch.onBallSize = 'CGFloat'
@@ -92,6 +96,22 @@ myCustomUISwitch.offColorContainer = 'UIColor'
 
 - Storyboard:<br />
 ![](storyboardScreenShot.png)
+
+### Use
+
+- Put this line of code into your `viewDidLoad()`:
+```swift
+myCustomUISwitch.delegate = self
+```
+- Make  your `ViewController` inherit `HTCustomSwitchDelegate`: 
+```swift
+extension ViewController: HTCustomSwitchDelegate {
+
+    func valueChanged(sender: HTCustomSwitch) {
+        print(sender.isOn)
+    }
+}
+```
 
 ## License
 
