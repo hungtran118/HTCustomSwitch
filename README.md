@@ -90,7 +90,7 @@ myCustomUISwitch.offColorContainer = 'UIColor'
 myCustomUISwitch.offColorContainer = 'UIColor'
 ```
 
-- Storyboard:
+- Storyboard:<br />
 ![](storyboardScreenShot.png)
 
 ## License
