@@ -6,7 +6,6 @@ target 'HTCustomSwitchExample' do
   use_frameworks!
 
   # Pods for HTCustomSwitchExample
-
 pod 'HTCustomSwitch', :path => "../HTCustomSwitch"
 
 end

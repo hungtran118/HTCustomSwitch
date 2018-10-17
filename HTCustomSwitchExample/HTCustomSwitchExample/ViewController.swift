@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var txfOnBallR: UITextField!
     @IBOutlet weak var txfOnBallG: UITextField!
     @IBOutlet weak var txfOnBallB: UITextField!
+    @IBOutlet weak var txfOnBallBorderR: UITextField!
+    @IBOutlet weak var txfOnBallBorderG: UITextField!
+    @IBOutlet weak var txfOnBallBorderB: UITextField!
     @IBOutlet weak var txfOnR: UITextField!
     @IBOutlet weak var txfOnG: UITextField!
     @IBOutlet weak var txfOnB: UITextField!
@@ -25,10 +28,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var txfOnBorderG: UITextField!
     @IBOutlet weak var txfOnBorderB: UITextField!
     
+    //
+    
     @IBOutlet weak var txfOffBallSize: UITextField!
     @IBOutlet weak var txfOffBallR: UITextField!
     @IBOutlet weak var txfOffBallG: UITextField!
     @IBOutlet weak var txfOffBallB: UITextField!
+    @IBOutlet weak var txfOffBallBorderR: UITextField!
+    @IBOutlet weak var txfOffBallBorderG: UITextField!
+    @IBOutlet weak var txfOffBallBorderB: UITextField!
     @IBOutlet weak var txfOffR: UITextField!
     @IBOutlet weak var txfOffG: UITextField!
     @IBOutlet weak var txfOffB: UITextField!
@@ -58,6 +66,9 @@ extension ViewController {
         txfOnBallR.delegate = self
         txfOnBallG.delegate = self
         txfOnBallB.delegate = self
+        txfOnBallBorderR.delegate = self
+        txfOnBallBorderG.delegate = self
+        txfOnBallBorderB.delegate = self
         txfOnR.delegate = self
         txfOnG.delegate = self
         txfOnB.delegate = self
@@ -69,6 +80,9 @@ extension ViewController {
         txfOffBallR.delegate = self
         txfOffBallG.delegate = self
         txfOffBallB.delegate = self
+        txfOffBallBorderR.delegate = self
+        txfOffBallBorderG.delegate = self
+        txfOffBallBorderB.delegate = self
         txfOffR.delegate = self
         txfOffG.delegate = self
         txfOffB.delegate = self
@@ -120,6 +134,11 @@ extension ViewController: UITextFieldDelegate {
                                                    green: CGFloat(Double(txfOnBallG.text ?? "0") ?? 0),
                                                    blue: CGFloat(Double(txfOnBallB.text ?? "0") ?? 0), alpha: 1)
             
+        case txfOnBallBorderR, txfOnBallBorderG, txfOnBallBorderB:
+            htCustomSwitch.onBallBorderColor = UIColor(red: CGFloat(Double(txfOnBallBorderR.text ?? "0") ?? 0),
+                                                 green: CGFloat(Double(txfOnBallBorderG.text ?? "0") ?? 0),
+                                                 blue: CGFloat(Double(txfOnBallBorderB.text ?? "0") ?? 0), alpha: 1)
+            
         case txfOnR, txfOnG, txfOnB:
             htCustomSwitch.onColorContainer = UIColor(red: CGFloat(Double(txfOnR.text ?? "0") ?? 0),
                                                         green: CGFloat(Double(txfOnG.text ?? "0") ?? 0),
@@ -137,6 +156,11 @@ extension ViewController: UITextFieldDelegate {
             htCustomSwitch.offBallColor = UIColor(red: CGFloat(Double(txfOffBallR.text ?? "0") ?? 0),
                                                     green: CGFloat(Double(txfOffBallG.text ?? "0") ?? 0),
                                                     blue: CGFloat(Double(txfOffBallB.text ?? "0") ?? 0), alpha: 1)
+            
+        case txfOffBallBorderR, txfOffBallBorderG, txfOffBallBorderB:
+            htCustomSwitch.offBallBorderColor = UIColor(red: CGFloat(Double(txfOffBallBorderR.text ?? "0") ?? 0),
+                                                        green: CGFloat(Double(txfOffBallBorderG.text ?? "0") ?? 0),
+                                                        blue: CGFloat(Double(txfOffBallBorderB.text ?? "0") ?? 0), alpha: 1)
             
         case txfOffR, txfOffG, txfOffB:
             htCustomSwitch.offColorContainer = UIColor(red: CGFloat(Double(txfOffR.text ?? "0") ?? 0),

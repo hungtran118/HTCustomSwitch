@@ -29,6 +29,7 @@ public class HTCustomSwitch: UIView {
     private let ballCornerRadiusAnimate = CABasicAnimation(keyPath: "cornerRadius")
     private let ballSizeAnimate = CABasicAnimation(keyPath: "bounds.size")
     private let ballBGColorAniamte = CABasicAnimation(keyPath: "backgroundColor")
+    private let ballBorderColorAnimate = CABasicAnimation(keyPath: "borderColor")
     
     private let containerAnimates = CAAnimationGroup()
     private let containerBGColorAniamte = CABasicAnimation(keyPath: "backgroundColor")
@@ -49,6 +50,13 @@ public class HTCustomSwitch: UIView {
     }
     
     @IBInspectable public var onBallColor: UIColor = UIColor.white {
+        didSet {
+            configBallOn()
+            setToCurrentState()
+        }
+    }
+    
+    @IBInspectable public var onBallBorderColor: UIColor = UIColor.clear {
         didSet {
             configBallOn()
             setToCurrentState()
@@ -77,6 +85,13 @@ public class HTCustomSwitch: UIView {
     }
     
     @IBInspectable public var offBallColor: UIColor = UIColor.white {
+        didSet {
+            configBallOff()
+            setToCurrentState()
+        }
+    }
+    
+    @IBInspectable public var offBallBorderColor: UIColor = UIColor.clear {
         didSet {
             configBallOff()
             setToCurrentState()
@@ -140,7 +155,7 @@ public class HTCustomSwitch: UIView {
     
     private func configAnimate() {
         
-        ballAnimates.animations = [ballXPosAnimate, ballSizeAnimate, ballCornerRadiusAnimate, ballBGColorAniamte]
+        ballAnimates.animations = [ballXPosAnimate, ballSizeAnimate, ballCornerRadiusAnimate, ballBGColorAniamte, ballBorderColorAnimate]
         ballAnimates.duration = 0.2
         ballAnimates.isRemovedOnCompletion = false
         ballAnimates.fillMode = kCAFillModeForwards
@@ -161,6 +176,8 @@ public class HTCustomSwitch: UIView {
         ball.frame = ballOnFrame
         ball.backgroundColor = onBallColor
         ball.layer.cornerRadius = min(ball.frame.width, ball.frame.height)/2
+        ball.layer.borderWidth = min(ball.frame.width, ball.frame.height)/20
+        ball.layer.borderColor = onBallBorderColor.cgColor
         layoutIfNeeded()
     }
     
@@ -172,6 +189,8 @@ public class HTCustomSwitch: UIView {
         ball.frame = ballOffFrame
         ball.backgroundColor = offBallColor
         ball.layer.cornerRadius = min(ball.frame.width, ball.frame.height)/2
+        ball.layer.borderWidth = min(ball.frame.width, ball.frame.height)/20
+        ball.layer.borderColor = offBallBorderColor.cgColor
         layoutIfNeeded()
     }
     
@@ -195,7 +214,7 @@ public class HTCustomSwitch: UIView {
         layoutIfNeeded()
     }
     
-    private func configBallAnimate(fromX: CGFloat, toX: CGFloat, fromSize: CGSize, toSize: CGSize, fromCornerRadius: CGFloat, toCornerRadius: CGFloat, fromBGColor: UIColor, toBGColor: UIColor) {
+    private func configBallAnimate(fromX: CGFloat, toX: CGFloat, fromSize: CGSize, toSize: CGSize, fromCornerRadius: CGFloat, toCornerRadius: CGFloat, fromBGColor: UIColor, toBGColor: UIColor, fromBorderColor: UIColor, toBoderColor: UIColor) {
         
         ballXPosAnimate.fromValue = fromX
         ballXPosAnimate.toValue = toX
@@ -208,6 +227,9 @@ public class HTCustomSwitch: UIView {
         
         ballBGColorAniamte.fromValue = fromBGColor.cgColor
         ballBGColorAniamte.toValue = toBGColor.cgColor
+        
+        ballBorderColorAnimate.fromValue = fromBorderColor.cgColor
+        ballBorderColorAnimate.toValue = toBoderColor.cgColor
         
         ball.layer.add(ballAnimates, forKey: "HTSwitchBallAnimate")
     }
@@ -260,7 +282,9 @@ public class HTCustomSwitch: UIView {
                               fromCornerRadius: min(ballOffFrame.width, ballOffFrame.height)/2,
                               toCornerRadius: min(ballOnFrame.width, ballOnFrame.height)/2,
                               fromBGColor: offBallColor,
-                              toBGColor: onBallColor)
+                              toBGColor: onBallColor,
+                              fromBorderColor: offBallBorderColor,
+                              toBoderColor: onBallBorderColor)
             
             configContainerAnimate(fromBGColor: offColorContainer,
                                    toBGColor: onColorContainer,
@@ -282,7 +306,9 @@ public class HTCustomSwitch: UIView {
                               toSize: ballOffFrame.size,
                               fromCornerRadius: min(ballOnFrame.width, ballOnFrame.height)/2,
                               toCornerRadius: min(ballOffFrame.width, ballOffFrame.height)/2, fromBGColor: onBallColor,
-                              toBGColor: offBallColor)
+                              toBGColor: offBallColor,
+                              fromBorderColor: onBallBorderColor,
+                              toBoderColor: offBallBorderColor)
             
             configContainerAnimate(fromBGColor: onColorContainer,
                                    toBGColor: offColorContainer,
