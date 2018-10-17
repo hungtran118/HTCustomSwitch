@@ -69,6 +69,10 @@ myCustomUISwitch.onBallSize = 'CGFloat'
 ```swift
 myCustomUISwitch.onBallColor = 'UIColor'
 ```
+- On Ball Border Color:
+```swift
+myCustomUISwitch.onBallBorderColor = 'UIColor'
+```
 - On Container Color:
 ```swift
 myCustomUISwitch.onColorContainer = 'UIColor'
@@ -84,6 +88,10 @@ myCustomUISwitch.offBallSize = 'CGFloat'
 - Off Ball Color:
 ```swift
 myCustomUISwitch.offBallColor = 'UIColor'
+```
+- Off Ball Border Color:
+```swift
+myCustomUISwitch.offBallBorderColor = 'UIColor'
 ```
 - Off Container Color:
 ```swift

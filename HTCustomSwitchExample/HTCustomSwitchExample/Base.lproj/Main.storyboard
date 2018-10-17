@@ -25,6 +25,38 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="r29-Qx-eGd"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onBallColor">
+                                        <color key="value" red="0.44335700680000001" green="0.5415898831" blue="0.93649791289999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onBallBorderColor">
+                                        <color key="value" red="0.22269954941852768" green="0.25031485484633997" blue="0.52522208121827418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onColorContainer">
+                                        <color key="value" red="0.86627531364120536" green="0.9516003699912885" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="onBorderColorContainer">
+                                        <color key="value" red="0.2226995494" green="0.25031485479999999" blue="0.52522208120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="onBallSize">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="offBallColor">
+                                        <color key="value" red="0.81499070250000005" green="0.48133823710000001" blue="0.56438725199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="offBallBorderColor">
+                                        <color key="value" red="0.58016735406091369" green="0.16708829313306925" blue="0.16148681471159454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="offColorContainer">
+                                        <color key="value" red="1" green="0.89439561629999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="offBorderColorContainer">
+                                        <color key="value" red="0.58016735409999998" green="0.16708829310000001" blue="0.16148681470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="offBallSize">
+                                        <real key="value" value="60"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="41d-4e-rfg">
                                 <rect key="frame" x="10" y="257" width="355" height="390"/>
