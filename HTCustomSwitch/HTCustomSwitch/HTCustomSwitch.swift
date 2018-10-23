@@ -112,6 +112,18 @@ public class HTCustomSwitch: UIView {
         }
     }
     
+    @IBInspectable public var ratioBallCorner: CGFloat = 0.5 {
+        didSet {
+            setToCurrentState()
+        }
+    }
+    
+    @IBInspectable public var ratioContainerCorner: CGFloat = 0.5 {
+        didSet {
+            setToCurrentState()
+        }
+    }
+    
     //MARK: - INIT
     override public init(frame: CGRect) {
         super.init(frame: frame)
@@ -175,7 +187,7 @@ public class HTCustomSwitch: UIView {
         ballOnFrame = CGRect(origin: ballPointOn, size: CGSize(width: onBallSize, height: onBallSize))
         ball.frame = ballOnFrame
         ball.backgroundColor = onBallColor
-        ball.layer.cornerRadius = min(ball.frame.width, ball.frame.height)/2
+        ball.layer.cornerRadius = min(ball.frame.width, ball.frame.height)*ratioBallCorner
         ball.layer.borderWidth = min(ball.frame.width, ball.frame.height)/20
         ball.layer.borderColor = onBallBorderColor.cgColor
         layoutIfNeeded()
@@ -188,7 +200,7 @@ public class HTCustomSwitch: UIView {
         
         ball.frame = ballOffFrame
         ball.backgroundColor = offBallColor
-        ball.layer.cornerRadius = min(ball.frame.width, ball.frame.height)/2
+        ball.layer.cornerRadius = min(ball.frame.width, ball.frame.height)/ratioBallCorner
         ball.layer.borderWidth = min(ball.frame.width, ball.frame.height)/20
         ball.layer.borderColor = offBallBorderColor.cgColor
         layoutIfNeeded()
@@ -200,7 +212,7 @@ public class HTCustomSwitch: UIView {
         container.backgroundColor = onColorContainer
         container.layer.borderWidth = min(frame.width, frame.height)/20
         container.layer.borderColor = onBorderColorContainer.cgColor
-        container.layer.cornerRadius = min(container.frame.width, container.frame.height)/2
+        container.layer.cornerRadius = min(container.frame.width, container.frame.height)*ratioContainerCorner
         layoutIfNeeded()
     }
     
@@ -210,7 +222,7 @@ public class HTCustomSwitch: UIView {
         container.backgroundColor = offColorContainer
         container.layer.borderWidth = min(frame.width, frame.height)/20
         container.layer.borderColor = offBorderColorContainer.cgColor
-        container.layer.cornerRadius = min(container.frame.width, container.frame.height)/2
+        container.layer.cornerRadius = min(container.frame.width, container.frame.height)*ratioContainerCorner
         layoutIfNeeded()
     }
     
@@ -279,8 +291,8 @@ public class HTCustomSwitch: UIView {
                               toX: ballOnFrame.origin.x + ballOnFrame.height/2,
                               fromSize: ballOffFrame.size,
                               toSize: ballOnFrame.size,
-                              fromCornerRadius: min(ballOffFrame.width, ballOffFrame.height)/2,
-                              toCornerRadius: min(ballOnFrame.width, ballOnFrame.height)/2,
+                              fromCornerRadius: min(ballOffFrame.width, ballOffFrame.height)*ratioBallCorner,
+                              toCornerRadius: min(ballOnFrame.width, ballOnFrame.height)*ratioBallCorner,
                               fromBGColor: offBallColor,
                               toBGColor: onBallColor,
                               fromBorderColor: offBallBorderColor,
@@ -304,8 +316,8 @@ public class HTCustomSwitch: UIView {
                               toX: ballOffFrame.origin.x + ballOffFrame.height/2,
                               fromSize: ballOnFrame.size,
                               toSize: ballOffFrame.size,
-                              fromCornerRadius: min(ballOnFrame.width, ballOnFrame.height)/2,
-                              toCornerRadius: min(ballOffFrame.width, ballOffFrame.height)/2, fromBGColor: onBallColor,
+                              fromCornerRadius: min(ballOnFrame.width, ballOnFrame.height)*ratioBallCorner,
+                              toCornerRadius: min(ballOffFrame.width, ballOffFrame.height)*ratioBallCorner, fromBGColor: onBallColor,
                               toBGColor: offBallColor,
                               fromBorderColor: onBallBorderColor,
                               toBoderColor: offBallBorderColor)

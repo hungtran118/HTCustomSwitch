@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m90-7J-2Ci" customClass="HTCustomSwitch" customModule="HTCustomSwitch">
-                                <rect key="frame" x="147" y="70" width="80" height="50"/>
+                                <rect key="frame" x="147" y="70" width="80" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="r29-Qx-eGd"/>
@@ -39,7 +39,7 @@
                                         <color key="value" red="0.2226995494" green="0.25031485479999999" blue="0.52522208120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="onBallSize">
-                                        <real key="value" value="20"/>
+                                        <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="offBallColor">
                                         <color key="value" red="0.81499070250000005" green="0.48133823710000001" blue="0.56438725199999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -54,7 +54,7 @@
                                         <color key="value" red="0.58016735409999998" green="0.16708829310000001" blue="0.16148681470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="offBallSize">
-                                        <real key="value" value="60"/>
+                                        <real key="value" value="50"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -526,7 +526,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="41d-4e-rfg" secondAttribute="bottom" constant="20" id="9Q1-DI-Cry"/>
                             <constraint firstItem="41d-4e-rfg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="DoZ-qj-Nsu"/>
                             <constraint firstItem="m90-7J-2Ci" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Qty-cJ-CLh"/>
-                            <constraint firstItem="m90-7J-2Ci" firstAttribute="width" secondItem="m90-7J-2Ci" secondAttribute="height" multiplier="8:5" id="ZAB-Uc-7gK"/>
+                            <constraint firstItem="m90-7J-2Ci" firstAttribute="width" secondItem="m90-7J-2Ci" secondAttribute="height" multiplier="8:3" id="ZAB-Uc-7gK"/>
                             <constraint firstItem="m90-7J-2Ci" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="vSr-H7-hrd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
