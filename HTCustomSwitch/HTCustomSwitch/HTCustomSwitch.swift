@@ -183,7 +183,6 @@ public class HTCustomSwitch: UIView {
     private func configBallOn() {
         
         let ballPointOn = CGPoint(x: bounds.maxX - (bounds.height + onBallSize)/2, y: (bounds.height - onBallSize)/2)
-        
         ballOnFrame = CGRect(origin: ballPointOn, size: CGSize(width: onBallSize, height: onBallSize))
         ball.frame = ballOnFrame
         ball.backgroundColor = onBallColor
@@ -197,10 +196,9 @@ public class HTCustomSwitch: UIView {
         
         let ballPointOff = CGPoint(x: (bounds.height - offBallSize)/2, y: (bounds.height - offBallSize)/2)
         ballOffFrame = CGRect(origin: ballPointOff, size: CGSize(width: offBallSize, height: offBallSize))
-        
         ball.frame = ballOffFrame
         ball.backgroundColor = offBallColor
-        ball.layer.cornerRadius = min(ball.frame.width, ball.frame.height)/ratioBallCorner
+        ball.layer.cornerRadius = min(ball.frame.width, ball.frame.height)*ratioBallCorner
         ball.layer.borderWidth = min(ball.frame.width, ball.frame.height)/20
         ball.layer.borderColor = offBallBorderColor.cgColor
         layoutIfNeeded()
@@ -275,11 +273,9 @@ public class HTCustomSwitch: UIView {
     private func setToCurrentState() {
         
         if isOn {
-            configBallOn()
-            configContainerOn()
+            setOn(isAnimate: false)
         } else {
-            configBallOff()
-            configContainerOff()
+            setOff(isAnimate: false)
         }
     }
     
